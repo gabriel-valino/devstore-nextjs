@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
+    "@t3-oss/env-core": "^0.11.1",
+    "@t3-oss/env-nextjs": "^0.11.1",
     "lucide-react": "^0.436.0",
     "next": "14.2.6",
     "react": "^18",
