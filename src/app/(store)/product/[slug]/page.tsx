@@ -5,12 +5,7 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 
 async function getProductDetails(slug: string): Promise<Product> {
-  const res = await api(`/products/${slug}`, {
-    // next: {
-    //   revalidate: 60 * 60, // 1 hour
-    // },
-    cache: 'no-store',
-  })
+  const res = await api(`/products/${slug}`)
 
   const product = await res.json()
 

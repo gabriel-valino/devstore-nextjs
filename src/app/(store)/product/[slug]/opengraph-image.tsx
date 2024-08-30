@@ -15,9 +15,7 @@ export const size = {
 export const contentType = 'image/png'
 
 async function getProduct(slug: string): Promise<Product> {
-  const res = await api(`/products/${slug}`, {
-    cache: 'no-store',
-  })
+  const res = await api(`/products/${slug}`)
 
   const product = await res.json()
 
